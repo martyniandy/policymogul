@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PolicyMogul</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body  class="with-side-menu">
+    <%= render "layouts/header"%>
+    <%= render "shared/side_bar"%>
+    <%= yield %>
+  </body>
+</html>

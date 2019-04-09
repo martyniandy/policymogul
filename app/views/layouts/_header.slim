@@ -1,0 +1,39 @@
+header.site-header
+  .container-fluid.p-0
+    .tob-logo
+      button#show-hide-sidebar-toggle.show-hide-sidebar
+        span toggle menu
+      button.hamburger.hamburger--htla
+        span toggle menu
+      a.site-logo href="#" 
+        img.hidden-md-down alt="" src="../assets/logo-2.svg" /
+        img.hidden-lg-down alt="" src="../assets/logo-2.svg" /
+    .site-header-content
+      .site-header-content-in
+        .site-header-shown
+          .dropdown.dropdown-notification.notif
+            a#dd-notification.header-alarm.dropdown-toggle.active aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" 
+              i.far.fa-bell
+          .dropdown.user-menu
+            button#dd-user-menu.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button" 
+              span.user-mail elliot_robinson@gmail.hotmail.co.uk
+              img.img-avatar alt="" src="../assets/avatar-2-64.png" /
+            .dropdown-menu.dropdown-menu-right aria-labelledby="dd-user-menu" 
+              a.dropdown-item href="#" 
+                span.fa.fa-user
+                | Profile
+              a.dropdown-item href="#" 
+                span.fa.fa-cog
+                | Settings
+              a.dropdown-item href="#" 
+                span.fas.fa-question-circle
+                | Help
+              .dropdown-divider
+              a.dropdown-item href="#" 
+                span.fas.fa-sign-out-alt
+                | Logout
+        /! .site-header-shown
+        .mobile-menu-right-overlay
+      /! site-header-content-in
+    /! .site-header-content
+  /! .container-fluid

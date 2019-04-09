@@ -1,0 +1,52 @@
+/! .side-menu
+.page-content
+  .container-fluid
+    .row
+      .col-md-9
+        .page-content-inner
+          h1 Create a new campaign
+          form
+            .form-group
+              label Title
+              input.form-control name="" type="text" /
+            .form-group
+              label Description
+              textarea.form-control placeholder=("Enter much information here.") 
+              small
+                | Surround content with an asterick on each side to make it
+                span style=("font-style: italic;")  Italic.
+                | Surround content with an asterick on each side to make it
+                span style=("font-weight: bold;")  bold.
+            .form-group
+              label This campaign will be accessible to:
+              .campaign-box
+                .radio-boxes
+                  label.custom-radio
+                    | Everyone
+                    br/
+                    span This campaign will be visible to other PloicyMogul users and may be indexed by search engines. Specific documents, collaborators and other information you choose can be made available to campaign collabrator only.
+                    input checked="checked" name="radio" type="radio" /
+                    span.checkmark
+                .radio-boxes
+                  label.custom-radio
+                    | Parlimentaries and collaboratory only
+                    br/
+                    span This campaign will be visible to other PloicyMogul users and may be indexed by search engines. Specific documents, collaborators and other information you choose can be made available to campaign collabrator only.
+                    input name="radio" type="radio" /
+                    span.checkmark
+                .radio-boxes
+                  label.custom-radio
+                    | Collaborators only
+                    br/
+                    span This campaign will be visible to other PloicyMogul users and may be indexed by search engines. Specific documents, collaborators and other information you choose can be made available to campaign collabrator only.
+                    input name="radio" type="radio" /
+                    span.checkmark
+            .form-group
+              label Tags that describe this campaign:
+              textarea#tags-editor-textarea.tag-editor-hidden-src example,example,example
+      .col-md-3
+        h4
+          i.fas.fa-long-arrow-alt-left
+          | Back to campaign
+  /! .container-fluid
+/! .page-content
